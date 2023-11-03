@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+    <title>SHOUTINGMACHINE</title>
 </head>
 <body>
+    <h1>shouting machine</h1>
+    <h3>in this task im required to create a page that asks the user to type something into a field, and when they submit the form, have the page say it back to them in all uppercase.</h3>
+    <form>
+
+        <label for="peron1Input">what do you like to eat in the morning?</label>
+        <input id="person1Input" type="text" name="person1Input">
     
+        <label for="peron2Input">Are you a married?</label>
+        <input id="person2Input" type="text" name="person2Input">
+
+        <label for="peron3Input">Do you have kids?</label>
+        <input id="person3Input" type="text" name="person3Input">
+
+        <label for="peron4Input">Would you like to have kids one day?</label>
+        <input id="person4Input" type="text" name="person4Input">
+
+        <button type="submit">ToUpperCase</button>
+    </form>
+
+    <div id="story" class="hidden">
+        <h5>Our little secret:</h5>
+        <p>
+            Early in the morning i like to eat <span id="person1">______</span> while making my breakfast for me and my wife, <span id="person2">_____</span>. What about your kids? <span id="person3">_____</span> would you like to have kids one day? <span id="person4">______</span>
+        </p>
+    </div>
+    <script src="js/scripts.js" ></script>
 </body>
 </html>
